@@ -1,39 +1,15 @@
-﻿class Swap
+﻿class QR
 {
     public static void Main(string[] args)
     {
-        int a = 10, b = 20,temp=0;
-        Console.WriteLine("Before Swaping : a=" + a + " b=" + b);
-        temp = a;
-        a= b;   
-        b= temp;
-        Console.WriteLine("After Swaping : a=" + a + " b=" + b);
+        //t a = 14,b = 5,quotient=0,reminder=0;
+        int quotient = 0, remainder = 0;
+        Random random = new Random();
+        int a = random.Next(0, 100);
+        int b=random.Next(1,10);
 
-        Console.WriteLine("==============================");
-
-        int x = 5, y = 10;
-        Console.WriteLine("Before swaping : x=" + x + " y=" + y);
-        x = x + y;
-        y = x - y;
-        x = x - y;
-        Console.WriteLine("After swaping : x=" + x + " y=" + y);
-
-        Console.WriteLine("==============================");
-
-        int m = 2, n = 4;
-        Console.WriteLine("Before swaping : m=" + m + " n=" + n);
-        m = m * n;
-        n = m / n;
-        m = m / n;
-        Console.WriteLine("After swaping : m=" + m + " n=" + n);
-
-        Console.WriteLine("==============================");
-
-        int i = 10, j = 20;
-        Console.WriteLine("Before swaping : i=" + i + " j=" + j);
-        i = i ^ b;
-        j = i ^ j;
-        i = i ^ j;
-        Console.WriteLine("After swaping : i=" + i + " j=" + j);
+        quotient = a / b;
+        remainder= a % b;
+        Console.WriteLine("Quotient is :" + quotient + " Reminder is : " + remainder);
     }
 }
