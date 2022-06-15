@@ -1,18 +1,44 @@
-﻿class QR
+﻿class Largest
 {
     public static void Main(string[] args)
     {
-        //int num = 117;
+        int a = 10, b = 20, c = 30;
 
-        Console.WriteLine("Enter a Number : ");
-        int num =Convert.ToInt32(Console.ReadLine());
-        if (num % 2 == 0)
+        Console.WriteLine("a=" + a + " b=" + b + " c=" + c);
+
+        if(a>b && a > c)
         {
-            Console.WriteLine("Number is Even");
+            Console.WriteLine("a is greater ");
+        }
+        else if(b>a && b > c)
+        {
+            Console.WriteLine("b is Greater ");
+        }
+        else //else if(c>a && c>b)
+        {
+            Console.WriteLine("c is greater ");
+        }
+
+        Console.WriteLine("__________________________________");
+
+        if (a > b)
+        {
+            if (a > c)
+            {
+                Console.WriteLine("a is greater ");
+            }
+            else
+            {
+                Console.WriteLine("b is greater");
+            }
+        }
+        else if(b > c)
+        {
+            Console.WriteLine("b is greater ");
         }
         else
         {
-            Console.WriteLine("Number is ODD");
+            Console.WriteLine("c is greater ");
         }
     }
 }
