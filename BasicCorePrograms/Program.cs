@@ -1,44 +1,32 @@
-﻿class Largest
+﻿class Alphabets
 {
     public static void Main(string[] args)
     {
-        int a = 10, b = 20, c = 30;
-
-        Console.WriteLine("a=" + a + " b=" + b + " c=" + c);
-
-        if(a>b && a > c)
+        for (char i = 'a'; i <= 'z'; i = (char)(i + 1))
         {
-            Console.WriteLine("a is greater ");
-        }
-        else if(b>a && b > c)
-        {
-            Console.WriteLine("b is Greater ");
-        }
-        else //else if(c>a && c>b)
-        {
-            Console.WriteLine("c is greater ");
-        }
-
-        Console.WriteLine("__________________________________");
-
-        if (a > b)
-        {
-            if (a > c)
+            if(i == 'a' || i=='e' || i=='i' || i=='o' || i=='u')
             {
-                Console.WriteLine("a is greater ");
+                Console.WriteLine(i+ " is Vowel ");
             }
             else
             {
-                Console.WriteLine("b is greater");
+                Console.WriteLine(i+ " is Consonent");
             }
         }
-        else if(b > c)
+
+        Console.WriteLine("----------------------------------");
+
+        Console.WriteLine("Enter an Alphabet : ");
+        char j=Convert.ToChar(Console.ReadLine());
+
+        if (j == 'a' || j == 'e' || j == 'i' || j == 'o' || j == 'u')
         {
-            Console.WriteLine("b is greater ");
+            Console.WriteLine(j + " is Vowel ");
         }
         else
         {
-            Console.WriteLine("c is greater ");
+            Console.WriteLine(j + " is Consonent");
         }
+
     }
 }
