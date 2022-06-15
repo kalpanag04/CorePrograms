@@ -2,14 +2,17 @@
 {
     public static void Main(string[] args)
     {
-        //t a = 14,b = 5,quotient=0,reminder=0;
-        int quotient = 0, remainder = 0;
-        Random random = new Random();
-        int a = random.Next(0, 100);
-        int b=random.Next(1,10);
+        //int num = 117;
 
-        quotient = a / b;
-        remainder= a % b;
-        Console.WriteLine("Quotient is :" + quotient + " Reminder is : " + remainder);
+        Console.WriteLine("Enter a Number : ");
+        int num =Convert.ToInt32(Console.ReadLine());
+        if (num % 2 == 0)
+        {
+            Console.WriteLine("Number is Even");
+        }
+        else
+        {
+            Console.WriteLine("Number is ODD");
+        }
     }
 }
