@@ -1,32 +1,13 @@
-﻿class Alphabets
+﻿using System;
+
+namespace BasicCorePrograms
 {
-    public static void Main(string[] args)
+    class Program
     {
-        for (char i = 'a'; i <= 'z'; i = (char)(i + 1))
+        public static void Main(string[] args)
         {
-            if(i == 'a' || i=='e' || i=='i' || i=='o' || i=='u')
-            {
-                Console.WriteLine(i+ " is Vowel ");
-            }
-            else
-            {
-                Console.WriteLine(i+ " is Consonent");
-            }
+            FlipCoin flipCoin = new FlipCoin();
+            flipCoin.PercentageFlips(11);
         }
-
-        Console.WriteLine("----------------------------------");
-
-        Console.WriteLine("Enter an Alphabet : ");
-        char j=Convert.ToChar(Console.ReadLine());
-
-        if (j == 'a' || j == 'e' || j == 'i' || j == 'o' || j == 'u')
-        {
-            Console.WriteLine(j + " is Vowel ");
-        }
-        else
-        {
-            Console.WriteLine(j + " is Consonent");
-        }
-
     }
 }
